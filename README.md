@@ -1,21 +1,26 @@
 ## Join Base Algorithms
 ### Apriori Algorithm
 
-It is based on "every sub (k-1)-Itemset of frequent k-Itemset must be frequent"</br>
+It is based on "every sub (k-1)-Itemset of frequent k-Itemset must be frequent" 
 
-Method 1)Candidate generation process
-  a)Eliminate those itemsets from Item Set generation process whole suport count falls below threshold
- 
- 
-Method 2)Item Set Generation
-  a)Generate (n) length itemsets from (n-1) length Candidate generation itemsets.This can be done by joining k-1 length itemsets together based ona condition that its first k-3 items are similar
-  b) Get the support count of all the generated item sets by going through trasaction database
+
+It mainly has two steps involved:-  
+**Method 1. Candidate generation process**   
+a)Eliminate those itemsets from Item Set generation process whole suport count falls below threshold 
+
+**Method 2)Item Set Generation** . 
+
+a)Generate (n) length itemsets from (n-1) length Candidate generation itemsets.This can be done by joining k-1 length itemsets together based ona condition that its first k-3 items are similar 
+
+b) Get the support count of all the generated item sets by going through trasaction database
   
 This process continues until Candidate generation itemsets become null
 
-Limitations:-
-  1)Complete Item set generation ,which takes up large memmory and execution time
-  2)Candidate generation process requires excessive database scans for gettting the Support count
+Limitations:-  
+
+  1)Complete Item set generation ,which takes up large memmory and execution time . 
+  
+  2)Candidate generation process requires excessive database scans for gettting the Support count . 
   
 2)Rapid Association Rule Mining (RARM)
 It uses a novel tree data structure known as Support-Ordered Trie Itemset (SOTrieIT).
